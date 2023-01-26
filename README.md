@@ -16,6 +16,19 @@
 ## Завдання 1. Результат:
 
 1.**Код:**
+```
+package domain;
+public class Customer {
+    public int ID = 1;
+    public boolean isNew = true;
+    public float total = 1000;
+    
+ public void displayCustomerInfo(){
+System.out.println("ID: "+ID);
+System.out.println("isNew: "+isNew);
+System.out.println("total: "+total);
+ }}
+```
 
 
 ## Завдання 2. Додавання в клас методів 
@@ -33,7 +46,16 @@
 ## Завдання 2. Результат:
 
 1.**Код:**
+```
+package domain;
+public class CustomerTest {
+    public static void main(String args[]){
+    Customer myCustomer = new Customer();
+    myCustomer.displayCustomerInfo();
+    }
+}
 
+```
 2.**Скріншот працюючої програми:**
 
 ![](Solution/done.png)
