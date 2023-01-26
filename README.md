@@ -71,5 +71,41 @@ public class CustomerTest {
   * **використати ці методи** в методі в методі ````main```` класу````CustomerTest````
   * зробити та зберегти (тека **Solution**) у файл ````advanced.png```` **скріншот** результатів роботи програми, та модифікувати файл ````README.md````відповідним чином
 
+##Завдання на "п'ять":
 
+1.**Код:**
+```
+package domain;
+public class Customer {
+    public int getID() {
+        return ID;
+    }
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+    public boolean isIsNew() {
+        return isNew;
+    }
+    public void setIsNew(boolean isNew) {
+        this.isNew = isNew;
+    }
+    public float getTotal() {
+        return total;
+    }
+    public void setTotal(float total) {
+        this.total = total;
+    }
+    public int ID = 1;
+    public boolean isNew = true;
+    public float total = 1000;
+    
+ public void displayCustomerInfo(){
+System.out.println("ID: "+ID);
+System.out.println("isNew: "+isNew);
+System.out.println("total: "+total);
+ }}
+```
+
+2. Результат роботи програми:
+![](Solution/advanced.png)
 
