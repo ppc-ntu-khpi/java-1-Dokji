@@ -13,6 +13,23 @@
 3. атрибути повинні мати **значення за замовчуванням** (наприклад, ````1```` для ````ID````, ````true```` для ````isNew````, ````1000```` для ````total````, див. відеозапис лекції).
 
 **УВАГА! Repl.It на даний момент не підтримує пакети, тож краще виконувати роботу в Netbeans!** Якщо виконуєте в Repl.It - робите як минулого разу - все в дефолтному пакеті (й не забувайте про файли ````.replit```` і ````start.sh````!).
+## Завдання 1. Результат:
+
+1.**Код:**
+```
+package domain;
+public class Customer {
+    public int ID = 1;
+    public boolean isNew = true;
+    public float total = 1000;
+    
+ public void displayCustomerInfo(){
+System.out.println("ID: "+ID);
+System.out.println("isNew: "+isNew);
+System.out.println("total: "+total);
+ }}
+```
+
 
 ## Завдання 2. Додавання в клас методів 
 
@@ -26,6 +43,22 @@
 3. зробіть та збережіть (тека **Solution**) у файл ````done.png```` **скріншот** результатів роботи програми 
 
 **На завершення виконання лабораторної роботи закомітьте ваш проект до репозиторію та здайте завдання через Google Classroom, вказавши посилання на Ваш репозиторій.**
+## Завдання 2. Результат:
+
+1.**Код:**
+```
+package domain;
+public class CustomerTest {
+    public static void main(String args[]){
+    Customer myCustomer = new Customer();
+    myCustomer.displayCustomerInfo();
+    }
+}
+
+```
+2.**Скріншот працюючої програми:**
+
+![](Solution/done.png)
 
 :triangular_flag_on_post: **УВАГА!** Ваша оцінка залежить від того, що саме було вами зроблено:
 * на "**три**" - просто виконані перелічені вище завдання
@@ -38,5 +71,41 @@
   * **використати ці методи** в методі в методі ````main```` класу````CustomerTest````
   * зробити та зберегти (тека **Solution**) у файл ````advanced.png```` **скріншот** результатів роботи програми, та модифікувати файл ````README.md````відповідним чином
 
+## Завдання на "п'ять":
 
+1.**Код:**
+```
+package domain;
+public class Customer {
+    public int getID() {
+        return ID;
+    }
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+    public boolean isIsNew() {
+        return isNew;
+    }
+    public void setIsNew(boolean isNew) {
+        this.isNew = isNew;
+    }
+    public float getTotal() {
+        return total;
+    }
+    public void setTotal(float total) {
+        this.total = total;
+    }
+    public int ID = 1;
+    public boolean isNew = true;
+    public float total = 1000;
+    
+ public void displayCustomerInfo(){
+System.out.println("ID: "+ID);
+System.out.println("isNew: "+isNew);
+System.out.println("total: "+total);
+ }}
+```
+
+2. Результат працюючої програми:
+![](Solution/advanced.png)
 
