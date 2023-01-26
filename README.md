@@ -46,7 +46,7 @@ System.out.println("total: "+total);
 ## Завдання 2. Результат:
 
 1.**Код:**
-```
+'''
 package domain;
 public class CustomerTest {
     public static void main(String args[]){
@@ -55,7 +55,7 @@ public class CustomerTest {
     }
 }
 
-```
+'''
 2.**Скріншот працюючої програми:**
 
 ![](Solution/done.png)
